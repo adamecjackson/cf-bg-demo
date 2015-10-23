@@ -1,0 +1,11 @@
+---
+# Manifest for deploying application on CloudFoundry
+applications:
+- name: aj-red
+  memory: 350m
+  disk: 250m
+  #host:
+  #buildpack: https://github.com/heroku/heroku-buildpack-scala.git
+  instances: 1
+ services:
+   - aj-monitor
